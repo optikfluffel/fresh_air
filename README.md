@@ -1,6 +1,6 @@
 # Fresh Air
 
-Unfollow ALL the SoundCloud Users!
+Unfollow ALL the SoundCloud users!
 
 
 ## Phoenix
