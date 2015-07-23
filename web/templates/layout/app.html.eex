@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Unfollow ALL the SoundCloud users!">
+    <meta name="author" content="(@)optikfluffel">
+
+    <title>Fresh Air</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body>
+      <header>
+        <h1>Fresh Air</h1>
+        <p>Unfollow ALL the SoundCloud users!</p>
+      </header>
+
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+
+      <main>
+        <%= @inner %>
+      </main>
+
+      <footer>Made with &hearts; in Berlin by <a href="http://optik.fluffel.io">optikfluffel</a></footer>
+
+    <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+
+    <script>require("web/static/js/app")</script>
+
+  </body>
+</html>
